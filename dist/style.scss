@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Dosis";
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1580px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/Sky.jpg) no-repeat center;
+  background-size: cover;
+
+  &__top {
+    padding: 50px 0;
+  }
+  &__top-inner {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    margin: 900px 0;
+  }
+
+  &__content-container {
+    margin: 0 500px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 60px;
+    letter-spacing: 2.5px;
+  }
+  &__desc {
+    margin: 30px 0;
+    font-size: 36px;
+    letter-spacing: 2.5px;
+  }
+  &__button {
+    margin-top: 30px;
+  }
+  &__link {
+    padding: 10px;
+    border-radius: 4px;
+
+    font-size: 28px;
+    letter-spacing: 2.5px;
+    color: #3777c9;
+  }
+}
+.menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 28px;
+    letter-spacing: 2.5px;
+  }
+}
+.focus {
+  color: #154088;
+  &__inner {
+    padding: 60px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+&__item-img {
+  height: 200px;
+}
+
+&__item-title {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+&__item-desc {
+  margin-top: 50px;
+  padding: 0 50px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.item {
+  margin-top: 100px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #154088;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #154088;
+
+  &__name {
+    font-size: 60px;
+    letter-spacing: 2.5px;
+    padding-bottom: 10px;
+  }
+  &__bottom-line {
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    background: #3777c9;
+  }
+
+  &__desc {
+    margin: 40px 0;
+    font-size: 36px;
+    letter-spacing: 2.5px;
+  }
+}
