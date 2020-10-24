@@ -50,7 +50,7 @@ ul {
     margin: 0 500px;
   }
 
-  &__inner {
+  &__inner-home {
     display: flex;
     flex-direction: column;
   }
@@ -80,6 +80,11 @@ ul {
     font-size: 28px;
     letter-spacing: 2.5px;
     color: #3777c9;
+  }
+  &__inner {
+    height: 200px;
+    background: url(../img/Sky.jpg) no-repeat 20% 35% / cover;
+    border-bottom: 5px solid #ffbc00;
   }
 }
 .menu {
@@ -273,5 +278,85 @@ ul {
   }
   &__svg {
     color: #ffffff;
+  }
+}
+.about {
+  &__container {
+    margin-top: 80px;
+  }
+}
+.about-info {
+  padding: 80px 0;
+  display: grid;
+  grid-template-areas:
+    "bioimg bio bio bio"
+    "cr1 cr2 cr3 cr4";
+  grid-gap: 20px;
+
+  &__photo {
+    width: 120%;
+  }
+  &__bio-img {
+    grid-area: bioimg;
+  }
+
+  &__bio-text {
+    padding: 20px 80px;
+    grid-area: bio;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6edf8;
+  }
+  &__bio-text-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  &__bio-text-desc {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
+
+  &__item--1 {
+    grid-area: cr1;
+  }
+  &__item--2 {
+    grid-area: cr2;
+  }
+  &__item--3 {
+    grid-area: cr3;
+  }
+  &__item--4 {
+    grid-area: cr4;
+  }
+
+  &__item {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__item-img {
+    width: 120px;
+  }
+
+  &__item-title {
+    margin: 50px 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+  }
+
+  &__item-desc {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 2px;
   }
 }
